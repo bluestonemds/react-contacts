@@ -19,6 +19,10 @@ class ListContacts extends Component{
     clearQuery=()=>{
         this.setState({query:''})
     }
+
+    ComponentDidMount(){
+        this.setState({query:'mi'})
+    }
     render(){
         const {contacts, onDeleteContact} = this.props
         const {query} = this.state
